@@ -1,1 +1,8 @@
-# Stigmergic-Skeleton-Fields-A-Bio-Inspired-Framework
+Title:
+Stigmergic Skeleton Fields: A Bio-Inspired Framework for Decentralized Multi-Robot Navigation via Localized Incremental Re-Skeletonization
+
+Abstract:
+Multi-robot navigation in dynamic environments needs a representation compact enough for fast re-planning yet rich enough for self-organized coordination. We propose the Stigmergic Skeleton Field (SSF), coupling a medial-axis skeleton graph with an ant-colony pheromone field on it, plus Localized Incremental Re-skeletonization (LIR), repairing topology only where a new obstacle changes it. We clarify SSF's novelty relative to skeleton planning and ant colony optimization alone, give a formal complexity analysis, and evaluate against seven baselines: static-skeleton Dijkstra, raw-grid ant colony optimization, RRT*, A*, Theta*, PRM*, and a skeleton-restricted Conflict-Based Search (CBS) for optimal small-N multi-agent planning. SSF matches the static-skeleton lower bound within 3–8% (paired Wilcoxon p<0.01 in two of three environments), while LIR is 1.1–9.0× faster than full re-skeletonization as map size grows to 1000 cells per side, and 30–200× faster than an incremental D* Lite baseline. A five-parameter sensitivity analysis shows performance varies by under 10% across tested ranges, and per-robot planning time stays within a factor of 1.4 as robot count grows from 5 to 100. CBS matches SSF exactly for N≤4 but fails to terminate within an 8 s budget for N≥6, while SSF stays sub-5 ms regardless of N. We also execute SSF/LIR paths under continuous differential-drive control with local obstacle sensing, a step toward hardware validation. All results here are simulation-based; we discuss this limitation explicitly and provide a ROS 2 package for future deployment.
+
+Keywords:
+artificial life, stigmergy, swarm robotics, medial-axis skeleton, multi-robot path planning, ant colony optimization
